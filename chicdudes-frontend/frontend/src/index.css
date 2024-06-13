@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
+@layer base {
+        @font-face {
+            font-family: "chic";
+            src: url("../src/assets/fonts/Chicdudes.ttf");
+          }
+}
+
+
+@layer base {
+    input {
+        font-family: "chic";
+        font-size: 52px;
+        color: #FF4A04;
+    }
+}
+
+
+@layer base {
+    p {
+        font-family: "chic";
+        font-size: 45px;
+        color: #FF4A04;
+    }
+}
+
+//inputs PK PHONE LAPTOP
+@media(max-width: 640px) {
+  .custom-input {
+    background: url('../src/assets/images/block.png') no-repeat;
+    background-size: cover;
+    border: none;
+    padding-left:15px;
+    padding-top: 5px;
+    font-size: 24px;
+    box-sizing: border-box;
+  }
+}
+@media(max-width: 1980px) {
+  .custom-input {
+    background: url('../src/assets/images/block.png') no-repeat;
+    background-size: cover;
+    border: none;
+    font-size: 52px;
+    padding-left: 47px;
+    box-sizing: border-box;
+  }
+}
